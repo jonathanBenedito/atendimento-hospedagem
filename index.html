@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento de Hospedagem</title>
+    
+    <link rel="stylesheet" href="src/css/estilos.css">
+</head>
+<body>
+    <h1>Atendimento de Hospedagem</h1>
+
+    <!-- 1³ Criar layout -->
+    <main>
+        <div class="cartao">
+            <div class="chat">
+                <div class="mensagem mensagem-atendente esconder">
+                    <img src="src/images/foto-atendente.png" alt="Foto do atendente" />
+                    <span>Olá!</span>
+                </div>
+                <div class="mensagem mensagem-cliente esconder" id="mensagem">
+                    <img src="src/images/foto-cliente.png" alt="Foto do cliente" />
+                    <span>Olá!</span>
+                </div>
+            </div>
+            <div class="botoes-container">
+                <div class="botoes">
+                    <button class="botao negar" id="negar" disabled>Não</button>
+                    <span id="questao"></span>
+                    <button class="botao confirmar" id="confirmar" disabled>Sim</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>
