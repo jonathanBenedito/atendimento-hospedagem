@@ -1,3 +1,133 @@
-.esconder {
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--cor-fonte);
+    background: url("../images/background.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+/* MAIN */
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* MAIN */
+
+/* CARTAO */
+
+.cartao {
+    background-color: var(--cor-fundo-cartao);
+    width: 527px;
+    height: 570px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 44px;
+    border-radius: 1rem;
+    backdrop-filter: blur(3px);
+}
+
+/* CARTAO */
+
+/* CHAT */
+
+.cartao .chat {
+    border: 2px solid var(--cor-borda-chat);
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 15px 15px 0 15px;
+}
+
+.cartao .chat .mensagem {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+}
+
+.cartao .chat .mensagem.esconder {
     display: none;
 }
+
+.cartao .chat .mensagem img {
+    width: 60px;
+    height: 60px;
+}
+
+.cartao .chat .mensagem span {
+    padding: 10px;
+    background-color: var(--cor-balao-mensagem);
+    display: flex;
+    align-self: flex-start;
+    border-radius: 1rem;
+}
+
+.cartao .chat .mensagem.mensagem-atendente span{
+    border-bottom-left-radius: 0px;
+}
+
+.cartao .chat .mensagem.mensagem-cliente {
+    flex-direction: row-reverse;
+}
+
+.cartao .chat .mensagem.mensagem-cliente span {
+    border-bottom-right-radius: 0px;
+}
+
+/* CHAT */
+
+/* BOTOES */
+
+.cartao .botoes {
+    display: flex;
+    margin-top: 24px;
+    background-color: var(--cor-fundo-botoes);
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.cartao .botoes .botao {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: var(--cor-fonte);
+}
+
+.cartao .botoes .botao.negar {
+    background-color: var(--cor-fundo-botao-negacao);
+}
+
+.cartao .botoes .botao.confirmar {
+    background-color: var(--cor-fundo-botao-confirmacao);
+}
+
+.cartao .botoes .botao.negar:disabled,
+.cartao .botoes .botao.confirmar:disabled {
+    background-color: var(--cor-fundo-botao-desativado);
+    color: var(--cor-fonte-botao-desativado);
+    cursor: default;
+}
+
+.cartao .botoes p {
+    width: 180px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/* BOTOES */
+
+/* CARTAO */

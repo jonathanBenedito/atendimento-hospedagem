@@ -1,0 +1,16 @@
+:root {
+    --cor-fundo-cartao: rgba(0, 0, 0, 0.6);
+    --cor-fonte: white;
+
+    --cor-borda-chat: rgba(255, 255, 255, 0.15);
+    --cor-balao-mensagem: #974444;
+
+    --cor-fundo-botoes: rgba(0, 0, 0, 0.3);
+    --cor-fundo-botao-negacao: #D92828;
+    --cor-fundo-botao-confirmacao: #149D3A;
+    --cor-fundo-botao-desativado: #5C5C5C;
+    --cor-fonte-botao-desativado: #939393;
+
+    --cor-fundo-rolagem: #070d127e;
+    --cor-botao-rolagem: rgba(255, 255, 255, 0.4);
+}

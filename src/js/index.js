@@ -23,6 +23,7 @@ function adicionarNovaMensagem(conteudo, souAtendente = true) {
         novaMensagemCliente.classList.remove("esconder")
         chat.appendChild(novaMensagemCliente)
     }
+    chat.scrollTo(0, chat.scrollHeight)
 }
 
 function desativarBotoes() {
@@ -36,6 +37,19 @@ function ativarBotoes() {
     botaoNegacao.disabled = false
 }
 
+function inserirNome() {
+    let nomeCliente = ""
+
+    while (!nomeCliente) {
+        nomeCliente = window.prompt("Informe seu nome.")
+
+        if (!nomeCliente) {
+            alert("Nome não pode estar em branco!")
+        }
+    }
+    return nomeCliente
+}
+
 function perguntarNome() {
     desativarBotoes()
     adicionarNovaMensagem("Olá! Qual é o seu nome?")
@@ -43,15 +57,15 @@ function perguntarNome() {
     setTimeout(function() {
         questaoBotao.innerText = "Informar nome?"
         botaoConfirmacao.disabled = false
-        botaoConfirmacao.addEventListener("click", informarNome)
+        botaoConfirmacao.addEventListener("click", responderNome)
     }, intervaloMensagem)
 }
 
-function informarNome() {
-    nomeCliente =  window.prompt("Informe seu nome.")
+function responderNome() {
+    let nomeCliente = inserirNome()
     adicionarNovaMensagem(nomeCliente, false)
     desativarBotoes()
-    botaoConfirmacao.removeEventListener("click", informarNome)
+    botaoConfirmacao.removeEventListener("click", responderNome)
 
     setTimeout(function() {
         adicionarNovaMensagem(`Seja bem-vindo ${nomeCliente}!`)
@@ -61,7 +75,7 @@ function informarNome() {
             questaoBotao.innerText = "Aceitar hospedagem?"
             botaoConfirmacao.disabled = false
             botaoNegacao.disabled = false
-            botaoConfirmacao.removeEventListener("click", informarNome)
+            botaoConfirmacao.removeEventListener("click", responderNome)
             botaoConfirmacao.addEventListener("click", confirmarHospedagem)
             botaoNegacao.addEventListener("click", negarHospedagem)
         }, intervaloMensagem)

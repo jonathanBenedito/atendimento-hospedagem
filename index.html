@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atendimento de Hospedagem</title>
-    
-    <link rel="stylesheet" href="src/css/estilos.css">
-</head>
-<body>
-    <h1>Atendimento de Hospedagem</h1>
 
-    <!-- 1³ Criar layout -->
-    <main>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variaveis.css">
+    <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="stylesheet" href="src/css/rolagem.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
         <div class="cartao">
             <div class="chat">
                 <div class="mensagem mensagem-atendente esconder">
                     <img src="src/images/foto-atendente.png" alt="Foto do atendente" />
                     <span>Olá!</span>
                 </div>
-                <div class="mensagem mensagem-cliente esconder" id="mensagem">
+                <div class="mensagem mensagem-cliente esconder">
                     <img src="src/images/foto-cliente.png" alt="Foto do cliente" />
                     <span>Olá!</span>
                 </div>
             </div>
-            <div class="botoes-container">
-                <div class="botoes">
-                    <button class="botao negar" id="negar" disabled>Não</button>
-                    <span id="questao"></span>
-                    <button class="botao confirmar" id="confirmar" disabled>Sim</button>
-                </div>
+            <div class="botoes">
+                <button class="botao negar" id="negar" disabled>
+                    <i class="fas fa-times fa-xl"></i>
+                </button>
+                <p id="questao"></p>
+                <button class="botao confirmar" id="confirmar" disabled>
+                    <i class="fas fa-check fa-xl"></i>
+                </button>
             </div>
         </div>
     </main>
 
     <script src="src/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>
