@@ -5,7 +5,7 @@
   Chatbot de Hospedagem
 </h1>
 <p align="center">
-  É um <a href="https://jonathanbenedito.github.io/mini-portfolio" target="_blank">website</a> que contém um pequeno chatbot, ele faz perguntas ao usuário sobre seu nome e se ele gostaria de fazer uma reserva. Hospedado no <a href="https://pages.github.com/">GitHub Pages</a>.
+  É um <a href="https://jonathanbenedito.github.io/chat-bot-hospedagem/" target="_blank">website</a> que contém um pequeno chatbot, ele faz perguntas ao usuário sobre seu nome e se ele gostaria de fazer uma reserva. Hospedado no <a href="https://pages.github.com/">GitHub Pages</a>.
 </p>
 
 ![demo](design/desktop.png)
