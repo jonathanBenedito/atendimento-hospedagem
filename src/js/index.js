@@ -41,8 +41,8 @@ function responderNome() {
         adicionarNovaMensagem(`Seja bem-vindo ${nomeCliente}!`)
 
         setTimeout(function () {
-            adicionarNovaMensagem(`Gostaria de passar uma noite na nossa estalagem? Custa apenas R$ 500,00!`)
-            questaoBotao.innerText = "Aceitar hospedagem?"
+            adicionarNovaMensagem(`Gostaria de reservar uma noite na nossa estalagem? Custa apenas R$ 500,00!`)
+            questaoBotao.innerText = "Aceitar reserva?"
             botaoConfirmacao.disabled = false
             botaoNegacao.disabled = false
             botaoConfirmacao.removeEventListener("click", responderNome)
